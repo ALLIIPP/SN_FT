@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/partial_error_search_layout_ll_container"
+    android:clickable="true"
+    android:background="@color/white"
+    >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/partial_title_text_size"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/nav_search"
+            android:layout_margin="@dimen/partial_title_margin"
+            >
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/partial_title_underline_height"
+            android:layout_marginHorizontal="@dimen/partial_title_underline_horizontal_margin"
+            android:background="?attr/title_underline_color"
+            />
+
+    <include layout="@layout/partial_error_layout"
+      />
+
+
+</LinearLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/fragment_collections_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior=".AppBarLayoutBehavior"
+            android:background="?attr/fragment_collection_appbarlayout_background_color"
+            >
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/fragment_collection_collapsingtoolbarlayout_contentscrim"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:scrimAnimationDuration="200">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_collection_framelayout_height">
+
+                        <ImageView
+                            android:id="@+id/fragment_collection_img_background"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fragment_collection_imageview_background_height"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fragment_collection_View_gradient_height"
+                            android:layout_gravity="bottom"
+                            android:background="?attr/fragment_collection_appbarlayout_gradient" />
+
+                    </FrameLayout>
+
+
+                    <ImageView
+                        android:id="@+id/fragment_collection_img_pfp"
+                        android:layout_width="@dimen/fragment_collection_cardview_pfp_width"
+                        android:layout_height="@dimen/fragment_collection_cardview_pfp_height"
+                        android:layout_marginStart="@dimen/fragment_collection_cardview_pfp_marginstart"
+                        android:layout_marginTop="@dimen/fragment_collection_cardview_pfp_margintop"
+                        android:scaleType="centerCrop" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_collections_tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragment_collection_img_pfp"
+                        android:layout_marginHorizontal="@dimen/fragment_collection_cardview_pfp_marginstart"
+                        android:layout_marginTop="12dp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/fragment_collection_tv_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragment_collections_tv_name"
+                        android:layout_marginHorizontal="@dimen/fragment_collection_cardview_pfp_marginstart"
+                        android:layout_marginTop="@dimen/fragment_collection_textview_description_topmargin"
+                        android:lineSpacingExtra="@dimen/fragment_collection_textview_description_linespacing"
+                        android:textColor="@color/fragment_collection_descrition_color"
+                        android:textSize="@dimen/item_t4recycleview_textview_description_textsize" />
+
+
+                    <View
+                        android:id="@+id/fragment_collection_divider_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/partial_title_underline_height"
+                        android:layout_below="@id/fragment_collection_tv_description"
+                        android:layout_marginVertical="@dimen/fragment_collection_divider_marginvertical"
+                        android:background="?attr/title_underline_color" />
+
+
+                    <LinearLayout
+                        android:id="@+id/fragment_collection_linearlayout_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragment_collection_divider_top"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginHorizontal="@dimen/fragment_collection_detail_marginhorizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fragment_collection_tv_floor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fragment_collection_tv_floor"
+                                android:textSize="@dimen/fragment_collection_detail_title_textsize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/fragment_collection_tv_floorvalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textSize="@dimen/fragment_collection_detail_value_textsize" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/fragment_collection_detail_marginhorizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/fragment_collection_tv_listed"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fragment_collection_tv_listed"
+                                android:textSize="@dimen/fragment_collection_detail_title_textsize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/fragment_collection_tv_listedvalue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/fragment_collection_detail_value_textsize"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginHorizontal="@dimen/fragment_collection_detail_marginhorizontal"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/fragment_collection_tv_total"
+                                android:textSize="@dimen/fragment_collection_detail_title_textsize"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/fragment_collection_tv_totalminted"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/fragment_collection_detail_value_textsize"
+
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/fragment_collection_divider_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/partial_title_underline_height"
+                        android:layout_below="@id/fragment_collection_linearlayout_details"
+                        android:layout_marginVertical="@dimen/fragment_collection_divider_marginvertical"
+                        android:background="?attr/title_underline_color" />
+
+
+                    <include layout="@layout/partial_searchbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_collection_cardview_pfp_marginstart"
+                        android:layout_below="@id/fragment_collection_divider_bottom"
+                        android:layout_marginVertical="@dimen/fragment_collection_linearlayout_searchreset_verticalmargin"
+                        android:id="@+id/fragment_collection_partial_searchbar"
+                        />
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/fragment_collection_partial_searchbar"
+                        android:layout_toStartOf="@id/fragment_collection_spn_sortby"
+                        android:layout_marginHorizontal="20dp"
+                        android:text="@string/fragment_collection_btn_clearsort"
+                        android:id="@+id/fragment_collection_btn_clearsort"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@id/fragment_collection_partial_searchbar"
+                        android:layout_alignBottom="@id/fragment_collection_btn_clearsort"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/fragment_collection_spn_sortby"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <include layout="@layout/partial_toolbar" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/fragment_collection_srl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_collection_recycleview_marginhorizontal"
+
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_collection_rv_nfts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_collection_fl_layout"
+
+        />
+
+    <include
+        layout="@layout/fragment_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+</FrameLayout>

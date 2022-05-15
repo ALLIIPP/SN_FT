@@ -1,0 +1,170 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- ACTIVITY_MAIN -->
+    <dimen name="main_activity_bottom_nav_height">54dp</dimen>
+
+    <!-- PARTIAL_TITLE -->
+    <dimen name="partial_title_text_size">20sp</dimen>
+    <dimen name="partial_title_margin">16dp</dimen>
+    <dimen name="partial_title_underline_height">1dp</dimen>
+    <dimen name="partial_title_underline_horizontal_margin">7dp</dimen>
+
+    <!-- HOME_FRAGMENT -->
+    <dimen name="fragment_home_collection_title_textsize">24sp</dimen>
+    <dimen name="fragment_home_collection_volume_textsize">16sp</dimen>
+    <dimen name="fragment_home_collection_title_margin">12dp</dimen>
+    <dimen name="fragment_home_collection_title_margintop">32dp</dimen>
+    <dimen name="fragment_home_collection_hot_margin_bottom">4dp</dimen>
+    <dimen name="fragment_home_collection_cardview_corner_radius">14dp</dimen>
+    <dimen name="fragment_home_collection_cardview_elevation">1dp</dimen>
+    <dimen name="fragment_home_collection_cardview_gainers_corner_radius">8dp</dimen>
+    <dimen name="fragment_home_collection_cardview_gainers_elevation">4dp</dimen>
+
+    <!-- ITEM COOL ITEMS VIEWPAGER -->
+    <dimen name="item_coolitems_viewpager_cardview_cornerradius">14dp</dimen>
+
+    <!-- ITEM_T1RECYCLEVIEW -->
+    <dimen name="item_t1recycleview_linearlayout_width">200dp</dimen>
+    <dimen name="item_t1recycleview_linearlayout_height">200dp</dimen>
+    <dimen name="item_t1recycleview_cardview_top_margin">12dp</dimen>
+    <dimen name="item_t1recycleview_cardview_bottom_margin">6dp</dimen>
+    <dimen name="item_t1recycleview_cardview_horizontal_margin">10dp</dimen>
+
+    <!-- ITEM_T2RECYCLEVIEW -->
+    <dimen name="item_t2recycleview_inner_cardview_width">180dp</dimen>
+    <dimen name="item_t2recycleview_inner_cardview_height">130dp</dimen>
+    <dimen name="item_t2recycleview_inner_cardview_elevation">0dp</dimen>
+
+    <dimen name="item_t2recycleview_outer_cardview_width">180dp</dimen>
+    <dimen name="item_t2recycleview_outer_cardview_height">220dp</dimen>
+    <dimen name="item_t2recycleview_outer_cardview_vertical_margin">18dp</dimen>
+    <dimen name="item_t2recycleview_outer_cardview_horizontal_margin">10dp</dimen>
+
+
+    <dimen name="item_t2recycleview_textview_name_margin">8dp</dimen>
+    <dimen name="item_t2recycleview_textview_name_textsize">16sp</dimen>
+    <dimen name="item_t2recycleview_volume_cardview_margin">8dp</dimen>
+    <dimen name="item_t2recycleview_cardview_volume_cornerradius">14dp</dimen>
+    <dimen name="item_t2recycleview_volume_textview_marginVertical">4dp</dimen>
+    <dimen name="item_t2recycleview_volume_textview_marginHorizontal">8dp</dimen>
+
+
+    <!-- ITEM_T3RECYCLEVIEW -->
+    <dimen name="item_t3recycleview_linearlayout_margin">8dp</dimen>
+    <dimen name="item_t3recycleview_imgview_length">65dp</dimen>
+    <dimen name="item_t3recycleview_imgview_marginend">6dp</dimen>
+
+    <!-- ITEM_T4RECYCLEVIEW -->
+    <dimen name="item_t4recycleview_cardview_height">310dp</dimen>
+    <dimen name="item_t4recycleview_textview_name_textsize">18sp</dimen>
+    <dimen name="item_t4recycleview_textview_description_textsize">14sp</dimen>
+    <dimen name="item_t4recycleview_textview_margin">12sp</dimen>
+    <dimen name="item_t4recycleview_divider_width">100dp</dimen>
+    <dimen name="item_t4recycleview_divider_height">1dp</dimen>
+    <dimen name="item_t4recycleview_divider_marginhorizontral">7dp</dimen>
+    <dimen name="item_t4recycleview_divider_marginbottom">7dp</dimen>
+
+    <!-- FRAGMENT_COLLECTION -->
+    <dimen name="fragment_collection_appbarlayout_height">360dp</dimen>
+    <dimen name="fragment_collection_framelayout_height">200dp</dimen>
+    <dimen name="fragment_collection_imageview_background_height">200dp</dimen>
+    <dimen name="fragment_collection_View_gradient_height">200dp</dimen>
+
+    <dimen name="fragment_collection_cardview_pfp_width">140dp</dimen>
+    <dimen name="fragment_collection_cardview_pfp_height">140dp</dimen>
+    <dimen name="fragment_collection_cardview_pfp_marginstart">20dp</dimen>
+    <dimen name="fragment_collection_cardview_pfp_margintop">140dp</dimen>
+    <dimen name="fragment_collection_cardview_pfp_cornerradius">80dp</dimen>
+
+    <dimen name="fragment_collection_toolbar_height">60dp</dimen>
+    <dimen name="fragment_collection_textview_name_textsize">18sp</dimen>
+    <dimen name="fragment_collection_textview_description_topmargin">10dp</dimen>
+    <dimen name="fragment_collection_textview_description_textsize">12sp</dimen>
+    <dimen name="fragment_collection_textview_description_linespacing">2dp</dimen>
+
+    <dimen name="fragment_collection_detail_marginhorizontal">12dp</dimen>
+    <dimen name="fragment_collection_detail_title_textsize">16sp</dimen>
+    <dimen name="fragment_collection_detail_value_textsize">14sp</dimen>
+
+    <dimen name="fragment_collection_divider_marginvertical">6dp</dimen>
+    <dimen name="fragment_collection_linearlayout_searchreset_verticalmargin">12dp</dimen>
+    <dimen name="fragment_collection_cardview_search_marginend">12dp</dimen>
+    <dimen name="fragment_collection_edittext_search_marginhorizontal">12dp</dimen>
+    <dimen name="fragment_collection_recycleview_marginhorizontal">10dp</dimen>
+
+
+    <!-- ITEM_COLLECTIONRECYCLEVIEW -->
+    <dimen name="item_collectionrecycleview_cardview_cornerradius">8dp</dimen>
+    <dimen name="item_collectionrecycleview_background_cardview_height">172dp</dimen>
+    <dimen name="item_collectionrecycleview_textview_market_marginvertical">2dp</dimen>
+    <dimen name="item_collectionrecycleview_textview_market_textsize">14sp</dimen>
+    <dimen name="item_collectionrecycleview_imageview_height">150dp</dimen>
+    <dimen name="item_collectionrecycleview_textview_name_margintop">15dp</dimen>
+    <dimen name="item_collectionrecycleview_textview_name_marginstart">3dp</dimen>
+    <dimen name="item_collectionrecycleview_textview_name_marginbottom">3dp</dimen>
+    <dimen name="item_collectionrecycleview_textview_name_textsize">16sp</dimen>
+    <dimen name="item_collectionrecycleview_textview_rank_textsize">16sp</dimen>
+    <dimen name="item_collectionrecycleview_textview_price_textsize">18sp</dimen>
+
+
+    <!-- PARTIAL_TOOLBAR -->
+    <dimen name="partial_toolbar_button_height">45dp</dimen>
+    <dimen name="partial_toolbar_button_width">45dp</dimen>
+    <dimen name="partial_toolbar_button_cornerradius">70dp</dimen>
+    <dimen name="partial_toolbar_button_elevation">0dp</dimen>
+    <dimen name="partial_toolbar_button_right_marginend">15dp</dimen>
+
+
+    <!-- FRAGMENT_SORT -->
+    <dimen name="fragment_sort_cardview_frame_cornerradius">21dp</dimen>
+    <dimen name="fragment_sort_cardview_margintop">85dp</dimen>
+    <dimen name="fragment_sort_linearlayout_marginbottom">75dp</dimen>
+    <dimen name="fragment_sort_textview_attributeslist_textview_margintop">10dp</dimen>
+    <dimen name="fragment_sort_textview_attributeslist_textview_textsize">35sp</dimen>
+    <dimen name="fragment_sort_textview_attributes_textview_margintop">40dp</dimen>
+    <dimen name="fragment_sort_button_search_margin">12dp</dimen>
+
+    <dimen name="fragment_sort_textview_attributes_marginend">6dp</dimen>
+    <dimen name="fragment_sort_textview_currentattribute_textsize">20sp</dimen>
+
+    <dimen name="fragment_sort_cardview_exitbar_height">45dp</dimen>
+    <dimen name="fragment_sort_cardview_imgcontainer_size">25dp</dimen>
+    <dimen name="fragment_sort_cardview_imgcontainer_marginend">12dp</dimen>
+
+
+    <!-- ITEM_FRAGMENT_SORT_ATTRIBUTESORT -->
+    <dimen name="item_fragment_sort_attributesort_outercardview_cornerradius">6dp</dimen>
+    <dimen name="item_fragment_sort_attributesort_outercardview_layoutmargin">8dp</dimen>
+    <dimen name="item_fragment_sort_attributesort_innercardview_layoutmargin">1dp</dimen>
+
+
+    <!-- FRAGMENT_SHOWNFT -->
+    <dimen name="fragment_shownft_collapsingtoolbarlayout_height">470dp</dimen>
+    <integer name="fragment_shownft_collapsingtoolbarlayout_animtime">250</integer>
+    <dimen name="fragment_shownft_collapsingtoolbarlayout_scrimheighttrigger">100dp</dimen>
+     <dimen name="fragment_shownft_realtimeblurview_blurradius">10dp</dimen>
+    <dimen name="fragment_shownft_cardview_imagecontainer_size">350dp</dimen>
+    <dimen name="fragment_shownft_cardview_imagecontainer_cornerradius">12dp</dimen>
+    <dimen name="fragment_shownft_linearlayout_margintop">12dp</dimen>
+    <dimen name="fragment_shownft_textview_name_marginhorizontal">12dp</dimen>
+    <dimen name="fragment_shownft_textview_name_textsize">30sp</dimen>
+    <dimen name="fragment_shownft_linearlayout_description_marginhorizontal">12dp</dimen>
+    <dimen name="fragment_shownft_linearlayout_description_marginvertical">18dp</dimen>
+
+    <dimen name="fragment_shownft_imageview_collectionimage_size">65dp</dimen>
+    <dimen name="fragment_shownft_imageview_collectionimage_marginend">8dp</dimen>
+    <dimen name="fragment_shownft_textview_collectionname_marginbottom">8dp</dimen>
+
+    <dimen name="fragment_shownft_view_item_marginhorizontal">12dp</dimen>
+    <dimen name="fragment_shownft_view_item_margintop">10dp</dimen>
+    <dimen name="fragment_shownft_view_item_textsize">18sp</dimen>
+
+    <dimen name="fragment_shownft_view_itemvalue_marginhorizontal">12dp</dimen>
+    <dimen name="fragment_shownft_view_itemvalue_margintop">10dp</dimen>
+    <dimen name="fragment_shownft_view_itemvalue_marginbottom">16dp</dimen>
+
+    <dimen name="fragment_shownft_textview_currentpricevalue_textsize">28sp</dimen>
+    <dimen name="fragment_shownft_textview_rankvalue_textsize">22sp</dimen>
+
+</resources>

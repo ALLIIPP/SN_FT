@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">SolanaNFT</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="percent">%1$s %%</string>
+    <string name="sol">%1$s SOL</string>
+    <string name="sol_symbol">◎ %1$s</string>
+    <string name="request_failed">Connection Error</string>
+    <string name="parenthized">(%1$s)</string>
+    <string name="see_all">See All</string>
+    <string name="arrow_right">  ></string>
+
+    <!-- MENU_MAIN -->
+    <string name="nav_home">Home</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_misc">Learn</string>
+
+    <!-- HOME -->
+    <string name="fragment_home_title">Home</string>
+    <string name="fragment_home_top_collection">Top Collections</string>
+    <string name="fragment_home_hot_collections">Hot Collections</string>
+    <string name="fragment_home_volume_7day">(Volume Change 24H)</string>
+    <string name="fragment_home_price_1day">(Price Change 24H)</string>
+    <string name="fragment_home_gainers_collections">Popular</string>
+    <string name="fragment_home_featured">\ \ Featured</string>
+
+    <!-- SEARCH -->
+    <string name="fragment_search_title">Search</string>
+
+    <!-- USER -->
+    <string name="fragment_user_title">User</string>
+
+    <!-- MISCELLANEOUS -->
+    <string name="fragment_miscellaneous_title">Learn</string>
+    <string name="fragment_miscellaneous_about">About</string>
+    <string name="fragment_miscellaneous_signup">Sign Up to FTX</string>
+    <string name="fragment_miscellaneous_getstarted">Get Started</string>
+    <string name="fragment_miscellaneous_follows">Follows</string>
+    <string name="fragment_miscellaneous_twitter">Twitter</string>
+    <string name="fragment_miscellaneous_discord">Discord</string>
+    <string name="fragment_miscellaneous_resources">Resources</string>
+    <string name="fragment_miscellaneous_moonrankapp">moonrank.app</string>
+    <string name="fragment_miscellaneous_moonrankdesc">MoonRank is the absolute statistical rarity service for the Solana NFT ecosystem.</string>
+    <string name="fragment_miscellaneous_dexyz">de.xyz</string>
+    <string name="fragment_miscellaneous_dexyzdesc">Solana NFT resources from the biggest brains in the metaverse.</string>
+    <string name="fragment_miscellaneous_solscanio">solscan.io</string>
+    <string name="fragment_miscellaneous_solscaniodesc">The user-friendly and real-time update Scanning Tool for the Solana Ecosystem.</string>
+    <string name="fragment_miscellaneous_phantom">Phantom</string>
+    <string name="fragment_miscellaneous_phantomdesc">The best Solana wallet for buying and selling NFTs!</string>
+
+    <!-- FRAGMENTGETSTARTED -->
+    <string name="fragment_getstarted_stepone">Step 1</string>
+    <string name="fragment_getstarted_steptwo">Step 2</string>
+    <string name="fragment_getstarted_stepthree">Step 3</string>
+    <string name="fragment_getstarted_stepfour">Step 4</string>
+    <string name="fragment_getstarted_stepfive">Step 5</string>
+
+    <string name="fragment_getstarted_steponedetails">To get started, buy the Solana Blockchain`s native token, SOL, on your favorite exchange</string>
+    <string name="fragment_getstarted_steptwodetails">Download phantom wallet on to your computer`s browser and follow the setup instructions</string>
+    <string name="fragment_getstarted_stepthreedetails">Transfer your SOL from the exchange to your phantom wallet</string>
+    <string name="fragment_getstarted_stepfourdetails">Connect with others through discord and twitter to find communities you like</string>
+    <string name="fragment_getstarted_stepfivedetails">You are now ready to purchase an NFT! Go to any marketplace that lists Solana NFTs and follow the directions to make your purchase</string>
+
+
+    <!--    FRAGMENTABOUT -->
+    <string name="fragment_about_message">The Solana blockchain has birthed a fascinating new ecosystem filled with innovators, artists, and developers eager to push the internet to a whole new level. NFTs(Non-Funglible Tokens) represent a token that grants you access into these communities. Whether you are interested in art, music, gaming, or just chilling out, there is a community waiting for you on Solana. You can get started by &lt;b>Signing Up&lt;/b> and buying the Solana Blockchains native token, Solana, also known as &lt;b>SOL&lt;/b>.</string>
+    <string name="fragment_about_welcome">Welcome</string>
+
+    <!-- ITEM_COLLECTIONRECYCLEVIEW -->
+    <string name="item_collectionrecycleview_rank">Rank: </string>
+
+    <!-- SORTFRAGMENT -->
+    <string name="sortfragment_attribute_item_append_attribute">%1$s \n (%2$s)</string>
+
+    <!-- FRAGMENT COLLECTION -->
+    <string name="fragment_collection_tv_floor">Floor</string>
+    <string name="fragment_collection_tv_listed">Listed</string>
+    <string name="fragment_collection_tv_total">Total</string>
+    <string name="fragment_collection_tv_rank">Rank: %1$s</string>
+    <string name="fragment_collection_btn_clearsort">Clear</string>
+
+    <!-- FRAGMENT_SORT -->
+    <string name="fragment_sort_attribute_name">: (%1$s)</string>
+    <string name="fragment_sort_attribute_list">Attribute List</string>
+    <string name="fragment_sort_attributes">Attributes</string>
+    <string name="fragment_sort_apply">Apply</string>
+
+    <!-- FRAGMENT_SHOWNFT -->
+    <string name="fragment_shownft_rank_timesseen">%1$s / %2$s</string>
+    <string name="fragment_shownft_shownft_currentprice">Current Price</string>
+    <string name="fragment_shownft_shownft_rarityrank">Rarity Rank</string>
+    <string name="fragment_shownft_shownft_attributes">Attributes</string>
+    <string name="fragment_shownft_shownft_datecreated">Date Created</string>
+    <string name="fragment_shownft_shownft_mintaddress">Mint Address</string>
+    <string name="fragment_shownft_button_text">View on %1$s</string>
+
+    <!-- Partial signup button -->
+    <string name="partial_signup_button">Sign Up</string>
+
+    <!-- PARTIAL ERROR LAYOUT -->
+    <string name="partial_error_layout_retry_tv_retry">Retry</string>
+    <string name="partial_error_layout_tv_errormssg">There was an error. We will fix it as soon as possible.</string>
+
+</resources>

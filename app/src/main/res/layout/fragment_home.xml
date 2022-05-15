@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/partial_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/fragment_home_srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="true"
+                    android:orientation="vertical">
+
+
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/fragment_home_vp_coolitems"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp" />
+
+                    <!-- android:background="#44555555" -->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginVertical="@dimen/fragment_home_collection_title_margintop"
+                        android:text="@string/fragment_home_top_collection"
+                        android:textSize="@dimen/fragment_home_collection_title_textsize"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragment_home_rv_top_collections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginTop="@dimen/fragment_home_collection_title_margintop"
+                        android:layout_marginBottom="@dimen/fragment_home_collection_hot_margin_bottom"
+                        android:text="@string/fragment_home_hot_collections"
+                        android:textSize="@dimen/fragment_home_collection_title_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginBottom="@dimen/fragment_home_collection_title_margin"
+                        android:text="@string/fragment_home_volume_7day"
+                        android:textSize="@dimen/fragment_home_collection_volume_textsize" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragment_home_rv_hot_collections"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginTop="@dimen/fragment_home_collection_title_margintop"
+                        android:layout_marginBottom="@dimen/fragment_home_collection_hot_margin_bottom"
+                        android:text="@string/fragment_home_gainers_collections"
+                        android:textSize="@dimen/fragment_home_collection_title_textsize"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginBottom="@dimen/fragment_home_collection_title_margin"
+                        android:text="@string/fragment_home_price_1day"
+                        android:textSize="@dimen/fragment_home_collection_volume_textsize" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="@dimen/fragment_home_collection_cardview_gainers_corner_radius"
+                        app:cardElevation="@dimen/fragment_home_collection_cardview_gainers_elevation">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/fragment_home_rv_gainers_collections"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false" />
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <TextView
+                        android:id="@+id/fragment_home_tv_other_first"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginVertical="@dimen/fragment_home_collection_title_margintop"
+                        android:textSize="@dimen/fragment_home_collection_title_textsize"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragment_home_rv_other_first"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_gray"
+                        android:gravity="center"
+                        android:text="@string/see_all"
+                        android:id="@+id/fragment_home_btn_otherfirst_see_all"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/fragment_home_tv_other_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginVertical="@dimen/fragment_home_collection_title_margintop"
+                        android:textSize="@dimen/fragment_home_collection_title_textsize"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragment_home_rv_other_second"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_gray"
+                        android:gravity="center"
+                        android:text="@string/see_all"
+                        android:id="@+id/fragment_home_btn_othersecond_see_all"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/fragment_home_tv_other_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_home_collection_title_margin"
+                        android:layout_marginVertical="@dimen/fragment_home_collection_title_margintop"
+                        android:textSize="@dimen/fragment_home_collection_title_textsize"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragment_home_rv_other_third"
+                        android:layout_width="match_parent"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ripple_gray"
+                        android:gravity="center"
+                        android:text="@string/see_all"
+                        android:id="@+id/fragment_home_btn_otherthird_see_all"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <include
+            layout="@layout/partial_error_layout"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

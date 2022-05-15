@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_followsrecycleview_cv_container"
+    app:cardCornerRadius="12dp">
+
+          <TextView
+              android:layout_margin="14dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="end|bottom"
+              android:id="@+id/item_followsrecycleview_tv_name"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:textSize="16sp"
+              android:maxLines="1"
+              android:ellipsize="end"
+              />
+
+
+
+</androidx.cardview.widget.CardView>

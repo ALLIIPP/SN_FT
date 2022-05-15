@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_coolitems_viewpager_cv_container"
+        app:cardCornerRadius="@dimen/item_coolitems_viewpager_cardview_cornerradius">
+
+        <ImageView
+            android:id="@+id/item_coolitems_viewpager_imv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="6dp"
+            app:cardBackgroundColor="#222222"
+            app:cardCornerRadius="6dp">
+
+            <TextView
+                android:id="@+id/item_coolitems_viewpager_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="3dp"
+                android:textSize="16sp"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

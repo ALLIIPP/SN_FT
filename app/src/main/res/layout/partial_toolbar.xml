@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_collection_toolbar_height"
+    android:gravity="center_vertical"
+    app:layout_collapseMode="pin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <FrameLayout
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+
+            >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/general_circle_background"
+            android:layout_gravity="center"
+            />
+
+            <ImageView
+                android:id="@+id/partial_toolbar_imgv_backbutton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/backarrow" />
+
+
+    </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/general_circle_background"
+                    android:layout_gravity="center"
+                    />
+
+            <ImageView
+                android:id="@+id/partial_toolbar_imgv_sort"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_sort_24"
+                />
+    </FrameLayout>
+    </RelativeLayout>
+
+</Toolbar>

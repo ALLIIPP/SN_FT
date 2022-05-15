@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_search_cv_container"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_t4recycleview_cardview_height"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="@dimen/fragment_home_collection_cardview_corner_radius"
+    app:cardElevation="@dimen/fragment_home_collection_cardview_elevation">
+    <!--  app:cardBackgroundColor="#97b4d0" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="14dp"
+            android:layout_margin="6dp"
+            >
+
+        <ImageView
+            android:id="@+id/item_search_background"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            />
+
+</androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/item_search_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/item_t4recycleview_textview_margin"
+            android:layout_marginTop="@dimen/item_t4recycleview_textview_margin"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="@dimen/item_t4recycleview_divider_width"
+            android:layout_height="@dimen/partial_title_underline_height"
+            android:layout_marginHorizontal="@dimen/partial_title_underline_horizontal_margin"
+            android:layout_marginBottom="@dimen/item_t4recycleview_divider_marginbottom"
+            android:background="?attr/title_underline_color" />
+
+        <TextView
+            android:id="@+id/item_search_tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/item_t4recycleview_textview_margin"
+            android:layout_marginBottom="@dimen/item_t4recycleview_textview_margin"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

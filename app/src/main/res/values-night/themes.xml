@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <attr name="title_underline_color" format="color" />
+    <attr name="fragment_collection_appbarlayout_background_color" format="color"/>
+    <attr name="fragment_collection_appbarlayout_gradient" format="reference" />
+    <attr name="fragment_collection_toggle_button_attribute" format="reference"/>
+    <attr name="fragment_collection_toggle_button_attributesort" format="reference"/>
+
+
+    <!-- Base application theme. -->
+    <style name="Theme.Solananftviewer" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="title_underline_color">#222222</item>
+        <item name="android:textColor">#ffffff</item>
+        <!-- Customize your theme here. -->
+
+        <item name="fragment_collection_appbarlayout_background_color">#464646</item>
+        <item name="fragment_collection_appbarlayout_gradient">@drawable/collection_fragment_custom_gradient_dark</item>
+        <item name="fragment_collection_toggle_button_attribute">@drawable/toggle_button_attribute_dark</item>
+        <item name="fragment_collection_toggle_button_attributesort">@drawable/toggle_button_attribute_dark</item>
+
+    </style>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginHorizontal="@dimen/item_t1recycleview_cardview_horizontal_margin"
+    android:layout_marginVertical="8dp"
+    android:id="@+id/item_t3recycleview_ll_container">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/item_t3recycleview_imgview_length"
+        android:layout_height="@dimen/item_t3recycleview_imgview_length"
+        app:cardCornerRadius="14dp"
+        android:layout_marginEnd="@dimen/item_t3recycleview_imgview_marginend"
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_t3recycleview_img"
+
+        />
+</androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/item_t3recycleview_tv_name"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/item_t3recycleview_tv_floorprice"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/item_t3recycleview_tv_pricechange"
+        android:maxLines="1"
+        android:ellipsize="end"
+        />
+
+
+</LinearLayout>
